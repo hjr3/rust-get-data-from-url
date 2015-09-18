@@ -1,0 +1,8 @@
+[package]
+name = "rust-get-data-from-url"
+version = "0.1.0"
+authors = ["Herman J. Radtke III <herman@hermanradtke.com>"]
+
+[dependencies]
+curl = "0.2.11"
+serde_json = "0.6.0"
