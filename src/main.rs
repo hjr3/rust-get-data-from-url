@@ -35,8 +35,7 @@ pub fn main() {
         });
 
     for (rel, link) in links.iter() {
-        let href = link.as_object()
-            .and_then(|object| object.get("href"))
+        let href = link.find("href")
             .and_then(|value| value.as_string())
             .unwrap_or_else(|| {
                 panic!("Failed to get 'href' value from within '_links'");
